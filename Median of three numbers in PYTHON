@@ -1,0 +1,18 @@
+f = float(input("Enter first number: "))
+s = float(input("Enter second number: "))
+t = float(input("Enter third number: "))
+
+if f>s and s>t:
+    print(f"Median is {s}.")
+elif f>t and t>s:
+    print(f"Median is {t}.")
+elif s>t and t>f:
+    print(f"Median is {t}.")
+elif s>f and f>t:
+    print(f"Median is {f}.")
+elif t>s and s>f:
+    print(f"Median is {s}.")
+elif t>f and f>s:
+    print(f"Median is {f}.")
+else:
+    print(f"Median is {f}")
